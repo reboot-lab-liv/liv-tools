@@ -1,9 +1,0 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font-family:sans-serif;padding:16px;margin:0}label{display:block;margin:8px 0}input{width:8em}</style></head><body>
-<p>（見本：ここに運営者が Claude と作ったツールが入ります）</p>
-<label>毎月の積立額（円）<input id="m" type="number" value="30000"></label>
-<label>年数<input id="y" type="number" value="20"></label>
-<label>利回り（年・例）%<input id="r" type="number" value="3" step="0.1"></label>
-<button onclick="calc()">計算する</button><p id="out"></p>
-<p><small>利回りは例です。将来を約束しません。</small></p>
-<script>function calc(){var m=+document.getElementById('m').value,y=+document.getElementById('y').value,r=+document.getElementById('r').value/100/12,n=y*12,v=r?m*((Math.pow(1+r,n)-1)/r):m*n;document.getElementById('out').textContent='合計 '+Math.round(v).toLocaleString()+' 円（元本 '+(m*n).toLocaleString()+' 円）';}</script>
-</body></html>
