@@ -1,0 +1,41 @@
+/* 会社員の再起動ラボ｜ツールのページの共通の見た目（tool_page.py が使う。ツールの中身 tool.html には効かない） */
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #5b6168;
+  --accent: #2f6f5e;
+  --line: #dcdad3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181b;
+    --surface: #1f2226;
+    --text: #e8e6e1;
+    --muted: #a3a8ae;
+    --accent: #6fc3a8;
+    --line: #33373c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  line-height: 1.8;
+}
+a { color: var(--accent); }
+.site-head, main, .site-foot { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+.site-head { padding-top: 16px; }
+.brand { font-weight: 700; text-decoration: none; }
+h1 { font-size: 1.6rem; line-height: 1.4; margin: 24px 0 8px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; border-left: 4px solid var(--accent); padding-left: 8px; }
+.lead { color: var(--muted); margin-top: 0; }
+.tool { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.tool iframe { display: block; width: 100%; min-height: 480px; border: 0; }
+.notice ul, .links ul, .howto ul, .howto ol { padding-left: 1.2em; }
+.cards { list-style: none; padding: 0; display: grid; gap: 12px; }
+.cards li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; }
+.cards .date { color: var(--muted); font-size: .85rem; }
+.site-foot { color: var(--muted); font-size: .85rem; margin-top: 40px; padding-bottom: 32px; border-top: 1px solid var(--line); }
