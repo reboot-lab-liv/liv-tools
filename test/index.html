@@ -60,7 +60,7 @@
 (function () {
   var f = document.getElementById('tool');
   function fit() {
-    try { f.style.height = f.contentWindow.document.documentElement.scrollHeight + 'px'; } catch (e) {}
+    try { var b = f.contentWindow.document.body; f.style.height = Math.ceil(b.getBoundingClientRect().height + parseFloat(getComputedStyle(b).marginTop) + parseFloat(getComputedStyle(b).marginBottom)) + 16 + 'px'; } catch (e) {}
   }
   f.addEventListener('load', function () {
     fit();
