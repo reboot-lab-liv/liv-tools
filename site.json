@@ -1,4 +1,16 @@
 {
   "base_url": "https://reboot-lab-liv.github.io/liv-tools/",
-  "tools": []
+  "tools": [
+    {
+      "slug": "nisa-simulator",
+      "title": "NISA 積立・取り崩しシミュレーション（毎月いくら使えるか）",
+      "description": "毎月の積立額と利回り（例）を入れると、NISA の上限1,800万円まで何年かかるか、取り崩しを始めてから100歳までお金がもつか、100歳までショートしない毎月の取り崩し額が分かります。",
+      "episode": "007",
+      "video_title": "NISAで毎月いくら使える？40代会社員が取り崩しシミュレーターをClaudeで作ってみた",
+      "video_url": "https://www.youtube.com/watch?v=mRZsOMvCR1M",
+      "note_title": "お金のツール集と作り方",
+      "published": "2026-10-09",
+      "updated": "2026-10-10"
+    }
+  ]
 }
